@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="quote_address">
+        <column xsi:type="varchar" name="district" length="255" comment="district" nullable="false"/>
+    </table>
+    <table name="sales_order_address">
+        <column xsi:type="varchar" name="district" length="255" comment="district" nullable="false"/>
+    </table>
+<table name="directory_district" resource="default" engine="innodb" comment="Directory District">
+        <column xsi:type="int" name="district_id" unsigned="true" nullable="false" identity="true"
+                comment="District ID"/>
+        <column xsi:type="int" name="region_id" unsigned="true" nullable="false" comment="Region ID"/>
+        <column xsi:type="varchar" name="district_name" nullable="true" length="255" comment="District Name"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="district_id"/>
+        </constraint>
+    </table>
+</schema>
