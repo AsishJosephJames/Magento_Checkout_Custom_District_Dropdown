@@ -14,7 +14,7 @@ Steps to run the Module :
 
 1. git clone https://github.com/AsishJosephJames/Magento_Checkout_Custom_District_Dropdown or Download the folder.
 
-2. Place the downloaded folder in app/code. - 
+2. Rename the Magento_Checkout_Custom_District_Dropdown folder to Fingent and Place it in app/code. 
 
 3. Go to Backend Store -> Configuration -> Customers -> Customer Configuration -> Address Templates -> HTML and replace it with the the data given below.
 
